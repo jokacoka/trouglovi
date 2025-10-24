@@ -1,105 +1,144 @@
 <script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  CommonHTML: { linebreaks: { automatic: true } },
-  "HTML-CSS": { linebreaks: { automatic: true } },
-         SVG: { linebreaks: { automatic: true } }
-});
+  MathJax.Hub.Config({
+    CommonHTML: { linebreaks: { automatic: true } },
+    "HTML-CSS": { linebreaks: { automatic: true } },
+           SVG: { linebreaks: { automatic: true } }
+  });
 </script>
-  
+
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
     <script src="ASCIIMathML.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+      async
+    ></script>
     <script>
       window.MathJax = {
-      tex: {
-        inlineMath: [['\\(','\\)']],
-        displayMath: [['\\[','\\]']]
-      },
-      svg: { fontCache: 'global' }
-    
-    };
-</script>  
+        tex: {
+          inlineMath: [["\\(", "\\)"]],
+          displayMath: [["\\[", "\\]"]],
+        },
+        svg: { fontCache: "global" },
+      };
+    </script>
+    <script src="deployggb.js"></script>
 
     <title>Elektronska lekcija iz matematike</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <h1 class="display-4">Електронске лекције о троугловима за старије разреде</h1>
+      <h1 class="display-4">
+        Електронске лекције о троугловима за старије разреде
+      </h1>
     </header>
 
     <h2 class="display-4">Врсте троуглова према страницама и угловима</h2>
 
-        <p>
-        Замисли да си архитекта који пројектује кров куће, инжењер мостова или планинар –
-        свуда око нас крију се троуглови. Нису сви исти: разликују се по дужинама страница и
-        величини углова. Познавање врста троуглова важно је јер свака врста има посебна
-        својства и примене. Разумевање поделе троуглова према страницама и угловима
-        омогућава нам да боље сагледамо њихову структуру и везе између основних елемената
-        троугла.
-        </p>
+    <p>
+      Замисли да си архитекта који пројектује кров куће, инжењер мостова или
+      планинар – свуда око нас крију се троуглови. Нису сви исти: разликују се
+      по дужинама страница и величини углова. Познавање врста троуглова важно је
+      јер свака врста има посебна својства и примене. Разумевање поделе
+      троуглова према страницама и угловима омогућава нам да боље сагледамо
+      њихову структуру и везе између основних елемената троугла.
+    </p>
 
-    
     <h3 class="display-5">Како препознати различите врсте троуглова?</h3>
-        <p>
-        У зависности од тога какве су дужине страница неког троугла, он може бити:
-        <lo>
-            <li>једнакостранични,</li>
-            <li>једнакокраки,</li>
-            <li>разнострани (неједнакостранични).</li>
-        </lo>
-        </p>
+    <p>
+      У зависности од тога какве су дужине страница неког троугла, он може бити:
+      <lo>
+        <li>једнакостранични,</li>
+        <li>једнакокраки,</li>
+        <li>разнострани (неједнакостранични).</li>
+      </lo>
+    </p>
 
     <h3 class="display-5">Интерактивни аплет</h3>
-        <p>
-        На почетку аплета појављује се само дуж AB и нештиклирана поља са називима
-        троуглова. Штиклирањем одговарајућег назива појављује се обележени троугао.
-        <br>
-APLET "Vrste trouglova po stranicama.ggb"
-        <br>
-        У зависности од тога какве су величине углова неког троугла, он може бити:
-        <lo>
+    <p>
+      На почетку аплета појављује се само дуж AB и нештиклирана поља са називима
+      троуглова. Штиклирањем одговарајућег назива појављује се обележени
+      троугао.
+      <br />
+    </p>
+
+    <!-- APLET "Vrste trouglova po stranicama.ggb" -->
+    <div id="ggb-1" class="ggb-window"></div>
+
+    <p>
+      <br />
+      У зависности од тога какве су величине углова неког троугла, он може бити:
+      <lo>
         <li>оштроугли,</li>
         <li>правоугли,</li>
-        <li>тупоугли. </li>
-        </lo>  
-        </p>
-
+        <li>тупоугли.</li>
+      </lo>
+    </p>
 
     <h3 class="display-5">Интерактивни аплет</h3>
-        <p>
-        Померањем једног од темена \( \triangle ABC \) мења се његов облик. У левом делу аплета приказују
-        се вредности углова и назив троугла, а мрежа остаје приказана ради лакшег уочавања
-        правог угла.
-        <br><br>
-APLET "Vrsta trougloba na osnovu unutrasnjih uglova.ggb"
-        </p>
+    <p>
+      Померањем једног од темена \( \triangle ABC \) мења се његов облик. У
+      левом делу аплета приказују се вредности углова и назив троугла, а мрежа
+      остаје приказана ради лакшег уочавања правог угла.
+    </p>
+    <br /><br />
 
+    <!-- APLET "Vrsta trougloba na osnovu unutrasnjih uglova.ggb" -->
+    <div id="ggb-2" class="ggb-window"></div>
 
     <div class="success-paragraph">
-        <h4>Задатак за вежбу</h4>
-        <p>1. Одреди којој врсти троуглова (према страницама и према угловима) припадају понуђени
-        троуглови.</p>
-Slika "Zadatak 2.png"
-        <br>
-        <b>Решење</b>
-        <br><br>
-        1. према страницама<br>
-        једнакостранични троуглови: 3,5<br>
-        једнакокраки троуглови: 1,8<br>
-        разнострани троуглови: 2,4,6,7 <br><br>
-        2. према угловима<br>
-        оштроугли: 1,3.5,8<br>
-        тупоугли: 2,4,6,7<br>
-        </div>
+      <h4>Задатак за вежбу</h4>
+      <p>
+        1. Одреди којој врсти троуглова (према страницама и према угловима)
+        припадају понуђени троуглови.
+      </p>
+      Slika "Zadatak 2.png"
+      <br />
+      <b>Решење</b>
+      <br /><br />
+      1. према страницама<br />
+      једнакостранични троуглови: 3,5<br />
+      једнакокраки троуглови: 1,8<br />
+      разнострани троуглови: 2,4,6,7 <br /><br />
+      2. према угловима<br />
+      оштроугли: 1,3.5,8<br />
+      тупоугли: 2,4,6,7<br />
+    </div>
 
+    <script>
+      const ggbMap = [
+        { id: "ggb-1", file: "./vrste_trouglova_po_stranicama.ggb" },
+        {
+          id: "ggb-2",
+          file: "./vrste_trouglova_na_osnovu_unutrasnjih_uglova_1.ggb",
+        },
+      ];
 
-</body>
+      const params = {
+        appName: "classic",
+        width: "100%",
+        height: "100%",
+        showAlgebraInput: false,
+        showMenuBar: false,
+        showToolBar: true,
+        enableLabelDrags: true,
+      };
+
+      window.addEventListener("load", () => {
+        ggbMap.forEach((item) => {
+          const applet = new GGBApplet(
+            { ...params, filename: item.file },
+            true
+          );
+          applet.inject(item.id);
+        });
+      });
+    </script>
+  </body>
 </html>
