@@ -27,7 +27,7 @@
         svg: { fontCache: "global" },
       };
     </script>
-
+    <script src="deployggb.js"></script>
     <title>Elektronska lekcija iz matematike</title>
   </head>
 
@@ -67,8 +67,10 @@
       добијамо приказ \( \triangle ABC \). Тачкама се покретом миша може мењати
       положај, а самим тим и изглед троугла.
       <br />
-      APLET "pojam trougla.ggb"
+      <!-- APLET "pojam trougla.ggb" -->
     </p>
+
+    <div id="ggb-1" class="ggb-window"></div>
 
     <h3 class="display-5">
       Чему служи увођење појмова странице и углови троугла?
@@ -95,7 +97,36 @@
       штиклирањем наведених поља можеш приметити да се сваки елемент приказује
       постепено.
       <br />
-      APLET "Elementi trougla.ggb"
+      <!-- APLET "Elementi trougla.ggb" -->
     </p>
+
+    <div id="ggb-2" class="ggb-window"></div>
+
+    <script>
+      const ggbMap = [
+        { id: "ggb-1", file: "pojam_trougla.ggb" },
+        { id: "ggb-2", file: "elementi_trougla.ggb" },
+      ];
+
+      const params = {
+        appName: "classic",
+        width: "100%",
+        height: "100%",
+        showAlgebraInput: false,
+        showMenuBar: false,
+        showToolBar: true,
+        enableLabelDrags: true,
+      };
+
+      window.addEventListener("load", () => {
+        ggbMap.forEach((item) => {
+          const applet = new GGBApplet(
+            { ...params, filename: item.file },
+            true
+          );
+          applet.inject(item.id);
+        });
+      });
+    </script>
   </body>
 </html>
