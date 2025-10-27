@@ -7,73 +7,63 @@
     "lessons": [
       {
         "id": "uvod_i_motivacija",
-        "file": "01uvodimotivacija",
+        "file": "01_uvodimotivacija",
         "title": "Uvod i motivacija"
       },
       {
-        "id": "Osnovno o skupovima",
-        "file": "skupovi",
-        "title": "Skupovi"
+        "id": "stranice_trouglova",
+        "file": "02_stranice",
+        "title": "Stranice trouglova"
       },
       {
-        "id": "Principi prebrojavanja",
-        "file": "principi",
-        "title": "Principi prebrojavanja u kombinatorici"
+        "id": "uglovi_trougla",
+        "file": "03_uglovi",
+        "title": "Uglovi trougla"
       },
       {
-        "id": "Dirihleov princip",
-        "file": "dirihle",
-        "title": "Dirihleov princip"
+        "id": "vrste_trouglova",
+        "file": "04_vrstetrouglova",
+        "title": "Vrste trouglova prema stranicama i uglovima"
       },
       {
-        "id": "Varijacije",
-        "file": "varijacije",
-        "title": "Varijacije"
+        "id": "odnos_stranica_i_uglova",
+        "file": "05_odnosstranicaiuglova",
+        "title": "Odnos stranica i trouglova"
       },
       {
-        "id": "Permutacije",
-        "file": "permutacije",
-        "title": "Permutacije"
+        "id": "povrsina_trougla",
+        "file": "06_povrsina",
+        "title": "Povrsina trougla"
       },
       {
-        "id": "Kombinacije",
-        "file": "kombinacije",
-        "title": "Kombinacije"
+        "id": "pitagorina_teorema",
+        "file": "08_pitagorinateorema",
+        "title": "Pitagorina teorema"
       },
       {
-        "id": "Binomna formula",
-        "file": "binomna",
-        "title": "Binomna formula"
+        "id": "podudarnost_trouglova_i_konstrukcija_SSS",
+        "file": "09_podudarnostSSS",
+        "title": "Podudarnost treouglova i kostrukcija SSS"
       },
       {
-        "id": "Polinomna formula",
-        "file": "polinomna",
-        "title": "Polinomna formula"
+        "id": "podudarnost_trouglova_i_konstrukcija_SUS",
+        "file": "10_podudarnostSUS",
+        "title": "Podudarnost treouglova i kostrukcija SUS"
       },
       {
-        "id": "Princip uključenja-isključenja",
-        "file": "ukljucenje",
-        "title": "Princip uključenja-isključenja"
+        "id": "podudarnost_trouglova_i_konstrukcija_USU",
+        "file": "11_podudarnostUSU",
+        "title": "Podudarnost treouglova i kostrukcija USU"
       },
       {
-        "id": "Invarijante",
-        "file": "invarijante",
-        "title": "Invarijante"
+        "id": "podudarnost_trouglova_i_konstrukcija_SSU",
+        "file": "12_podudarnostSSU",
+        "title": "Podudarnost treouglova i kostrukcija SSU"
       },
       {
-        "id": "Kombinatorika i sah",
-        "file": "kombinatorikaisah",
-        "title": "Kombinatorika i sah"
-      },
-      {
-        "id": "Razni zadaci",
-        "file": "raznizadaci",
-        "title": "Razni zadaci iz kombinatorike"
-      },
-      {
-        "id": "Istorija kombinatorike",
-        "file": "istorijat",
-        "title": "Iz istorije kombinatorike"
+        "id": "preslikavanje_trougla",
+        "file": "13_preslikavanjetrougla",
+        "title": "Preslikavanje trougla"
       }
     ]
   }
