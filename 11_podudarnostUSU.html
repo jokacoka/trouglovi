@@ -1,43 +1,6 @@
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    CommonHTML: { linebreaks: { automatic: true } },
-    "HTML-CSS": { linebreaks: { automatic: true } },
-           SVG: { linebreaks: { automatic: true } }
-  });
-</script>
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-    <script src="ASCIIMathML.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
-      async
-    ></script>
-    <script>
-      window.MathJax = {
-        tex: {
-          inlineMath: [["\\(", "\\)"]],
-          displayMath: [["\\[", "\\]"]],
-        },
-        svg: { fontCache: "global" },
-      };
-    </script>
-    <script src="deployggb.js"></script>
-
-    <title>Elektronska lekcija iz matematike</title>
-  </head>
 
   <body>
-    <header>
-      <h1 class="display-4">
-        Електронске лекције о троугловима за старије разреде
-      </h1>
-    </header>
 
     <h2 class="display-4">Подударност троуглова и конструкција - став УСУ</h2>
 
@@ -72,8 +35,8 @@
         подударни.</i
       >
       <br />
-      <!-- APLET "podudarnost usu.ggb" -->
-      <div id="ggb-1" class="ggb-window"></div>
+      <!-- APLET "podudarnost usu.ggb" 
+      <div id="ggb-1" class="ggb-window"></div>-->
       <br />
       Ову подударност записујемо на следећи начин:
       <br />
@@ -120,8 +83,8 @@
         </li>
       </lo>
     </p>
-    <!-- APLET "konstru usu.ggb" -->
-    <div id="ggb-2" class="ggb-window"></div>
+    <!-- APLET "konstru usu.ggb" 
+    <div id="ggb-2" class="ggb-window"></div>-->
 
     <div class="light-paragraph">
       <h3 class="display-5">Додатак</h3>
@@ -131,16 +94,16 @@
         конструкцијом његове симетрале.
       </p>
 
-      <!-- APLET "30.ggb" -->
-      <div id="ggb-3" class="ggb-window"></div>
+      <!-- APLET "30.ggb" 
+      <div id="ggb-3" class="ggb-window"></div>-->
       <p>
         Угао од 45&deg; конструишемо као половину угла од 90&deg;. Најпре треба
         конструисати угао од 90&deg;, а затим га поделити на два једнака дела
         конструкцијом његове симетрале.
       </p>
 
-      <!-- APLET "45.ggb" -->
-      <div id="ggb-4" class="ggb-window"></div>
+      <!-- APLET "45.ggb" 
+      <div id="ggb-4" class="ggb-window"></div>-->
     </div>
 
     <div class="success-paragraph">
@@ -151,50 +114,10 @@
       <br />
       <b>Решење.</b>
       <br />
-      <!-- APLET "usu zadatak.ggb" -->
-      <div id="ggb-5" class="ggb-window"></div>
+      <!-- APLET "usu zadatak.ggb" 
+      <div id="ggb-5" class="ggb-window"></div>-->
     </div>
 
-    <script>
-      const ggbMap = [
-        { id: "ggb-1", file: "./podudarnost_usu.ggb" },
-        {
-          id: "ggb-2",
-          file: "./konstrusu.ggb",
-        },
-        {
-          id: "ggb-3",
-          file: "./30.ggb",
-        },
-        {
-          id: "ggb-4",
-          file: "./45.ggb",
-        },
-        {
-          id: "ggb-5",
-          file: "./usu_zadatak.ggb",
-        },
-      ];
-
-      const params = {
-        appName: "classic",
-        width: "100%",
-        height: "100%",
-        showAlgebraInput: false,
-        showMenuBar: false,
-        showToolBar: true,
-        enableLabelDrags: true,
-      };
-
-      window.addEventListener("load", () => {
-        ggbMap.forEach((item) => {
-          const applet = new GGBApplet(
-            { ...params, filename: item.file },
-            true
-          );
-          applet.inject(item.id);
-        });
-      });
-    </script>
+   
   </body>
 </html>

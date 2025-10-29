@@ -1,43 +1,6 @@
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    CommonHTML: { linebreaks: { automatic: true } },
-    "HTML-CSS": { linebreaks: { automatic: true } },
-           SVG: { linebreaks: { automatic: true } }
-  });
-</script>
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-    <script src="ASCIIMathML.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
-      async
-    ></script>
-    <script>
-      window.MathJax = {
-        tex: {
-          inlineMath: [["\\(", "\\)"]],
-          displayMath: [["\\[", "\\]"]],
-        },
-        svg: { fontCache: "global" },
-      };
-    </script>
-    <script src="deployggb.js"></script>
-
-    <title>Elektronska lekcija iz matematike</title>
-  </head>
 
   <body>
-    <header>
-      <h1 class="display-4">
-        Електронске лекције о троугловима за старије разреде
-      </h1>
-    </header>
 
     <h2 class="display-4">Подударност троуглова и конструкција - став СУС</h2>
 
@@ -72,8 +35,8 @@
         подударни.</i
       >
       <br />
-      <!-- APLET "podudarnost sus.ggb" -->
-      <div id="ggb-1" class="ggb-window"></div>
+      <!-- APLET "podudarnost sus.ggb" 
+      <div id="ggb-1" class="ggb-window"></div>-->
       <br />
       Ову подударност записујемо на следећи начин:
       <br />
@@ -117,8 +80,8 @@
       </lo>
     </p>
 
-    <!-- APLET "sus.ggb" -->
-    <div id="ggb-2" class="ggb-window"></div>
+    <!-- APLET "sus.ggb" 
+    <div id="ggb-2" class="ggb-window"></div>-->
 
     <div class="light-paragraph">
       <h3 class="display-5">Додатак</h3>
@@ -130,8 +93,8 @@
         саберемо са углом од 60&deg; добијамо тражени угао од 75&deg;.
       </p>
 
-      <!-- APLET "Konstrukcija75.ggb" -->
-      <div id="ggb-3" class="ggb-window"></div>
+      <!-- APLET "Konstrukcija75.ggb" 
+      <div id="ggb-3" class="ggb-window"></div>-->
     </div>
 
     <div class="success-paragraph">
@@ -143,46 +106,10 @@
       <br />
       <b>Решење.</b>
       <br />
-      <!-- APLET "konst jednakokraki.ggb" -->
-      <div id="ggb-4" class="ggb-window"></div>
+      <!-- APLET "konst jednakokraki.ggb" 
+      <div id="ggb-4" class="ggb-window"></div>-->
     </div>
 
-    <script>
-      const ggbMap = [
-        { id: "ggb-1", file: "./podudarnostsus.ggb" },
-        {
-          id: "ggb-2",
-          file: "./sus.ggb",
-        },
-        {
-          id: "ggb-3",
-          file: "./konstrukcija_75.ggb",
-        },
-        {
-          id: "ggb-4",
-          file: "./konstrjednakokraki.ggb",
-        },
-      ];
-
-      const params = {
-        appName: "classic",
-        width: "100%",
-        height: "100%",
-        showAlgebraInput: false,
-        showMenuBar: false,
-        showToolBar: true,
-        enableLabelDrags: true,
-      };
-
-      window.addEventListener("load", () => {
-        ggbMap.forEach((item) => {
-          const applet = new GGBApplet(
-            { ...params, filename: item.file },
-            true
-          );
-          applet.inject(item.id);
-        });
-      });
-    </script>
+    
   </body>
 </html>

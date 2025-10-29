@@ -1,43 +1,6 @@
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    CommonHTML: { linebreaks: { automatic: true } },
-    "HTML-CSS": { linebreaks: { automatic: true } },
-           SVG: { linebreaks: { automatic: true } }
-  });
-</script>
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-    <script src="ASCIIMathML.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
-      async
-    ></script>
-    <script>
-      window.MathJax = {
-        tex: {
-          inlineMath: [["\\(", "\\)"]],
-          displayMath: [["\\[", "\\]"]],
-        },
-        svg: { fontCache: "global" },
-      };
-    </script>
-    <script src="deployggb.js"></script>
-
-    <title>Elektronska lekcija iz matematike</title>
-  </head>
 
   <body>
-    <header>
-      <h1 class="display-4">
-        Електронске лекције о троугловима за старије разреде
-      </h1>
-    </header>
 
     <h2 class="display-4">Врсте троуглова према страницама и угловима</h2>
 
@@ -68,8 +31,8 @@
       <br />
     </p>
 
-    <!-- APLET "Vrste trouglova po stranicama.ggb" -->
-    <div id="ggb-1" class="ggb-window"></div>
+    <!-- APLET "Vrste trouglova po stranicama.ggb" 
+    <div id="ggb-1" class="ggb-window"></div>-->
 
     <p>
       <br />
@@ -89,8 +52,8 @@
     </p>
     <br /><br />
 
-    <!-- APLET "Vrsta trougloba na osnovu unutrasnjih uglova.ggb" -->
-    <div id="ggb-2" class="ggb-window"></div>
+    <!-- APLET "Vrsta trougloba na osnovu unutrasnjih uglova.ggb" 
+    <div id="ggb-2" class="ggb-window"></div>-->
 
     <div class="success-paragraph">
       <h4>Задатак за вежбу</h4>
@@ -99,7 +62,7 @@
         припадају понуђени троуглови.
       </p>
       <figure style="text-align:center;">
-  <img src="Задатак 2.png" alt="Zadatak" width="600" height="400">
+  <img src="data/courses/Trouglovi_os/Задатак 2.png" alt="Zadatak" width="600" height="400">
   <figcaption></figcaption>
 </figure>
       <br />
@@ -114,34 +77,5 @@
       тупоугли: 2,4,6,7<br />
     </div>
 
-    <script>
-      const ggbMap = [
-        { id: "ggb-1", file: "./vrste_trouglova_po_stranicama.ggb" },
-        {
-          id: "ggb-2",
-          file: "./vrste_trouglova_na_osnovu_unutrasnjih_uglova_1.ggb",
-        },
-      ];
-
-      const params = {
-        appName: "classic",
-        width: "100%",
-        height: "100%",
-        showAlgebraInput: false,
-        showMenuBar: false,
-        showToolBar: true,
-        enableLabelDrags: true,
-      };
-
-      window.addEventListener("load", () => {
-        ggbMap.forEach((item) => {
-          const applet = new GGBApplet(
-            { ...params, filename: item.file },
-            true
-          );
-          applet.inject(item.id);
-        });
-      });
-    </script>
   </body>
 </html>

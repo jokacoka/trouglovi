@@ -1,43 +1,5 @@
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    CommonHTML: { linebreaks: { automatic: true } },
-    "HTML-CSS": { linebreaks: { automatic: true } },
-           SVG: { linebreaks: { automatic: true } }
-  });
-</script>
-
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-    <script src="ASCIIMathML.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
-      async
-    ></script>
-    <script>
-      window.MathJax = {
-        tex: {
-          inlineMath: [["\\(", "\\)"]],
-          displayMath: [["\\[", "\\]"]],
-        },
-        svg: { fontCache: "global" },
-      };
-    </script>
-    <script src="deployggb.js"></script>
-
-    <title>Elektronska lekcija iz matematike</title>
-  </head>
 
   <body>
-    <header>
-      <h1 class="display-4">
-        Електронске лекције о троугловима за старије разреде
-      </h1>
-    </header>
 
     <h2 class="display-4">Однос страница и углова</h2>
 
@@ -74,8 +36,8 @@
     </p>
     <br />
 
-    <!-- APLET "Odnos stranica i trouglova.ggb" -->
-    <div id="ggb-1" class="ggb-window"></div>
+    <!-- APLET "Odnos stranica i trouglova.ggb" 
+    <div id="ggb-1" class="ggb-window"></div>-->
 
     <br />
     <p>
@@ -137,8 +99,8 @@
       <br />
     </p>
 
-    <!-- APLET  "Odnos stranica i uglova-jednakokraki.ggb" -->
-    <div id="ggb-2" class="ggb-window"></div>
+    <!-- APLET  "Odnos stranica i uglova-jednakokraki.ggb" 
+    <div id="ggb-2" class="ggb-window"></div>-->
 
     <div class="success-paragraph">
       <h4>Задаци за вежбу</h4>
@@ -163,34 +125,6 @@
       Други случај: Углови троугла су 52&deg;, 52&deg; и 76&deg;.
     </div>
 
-    <script>
-      const ggbMap = [
-        { id: "ggb-1", file: "./odnos_stranica_i_uglova_jednakokraki.ggb" },
-        {
-          id: "ggb-2",
-          file: "./odnos_stranica_i_uglova.ggb",
-        },
-      ];
 
-      const params = {
-        appName: "classic",
-        width: "100%",
-        height: "100%",
-        showAlgebraInput: false,
-        showMenuBar: false,
-        showToolBar: true,
-        enableLabelDrags: true,
-      };
-
-      window.addEventListener("load", () => {
-        ggbMap.forEach((item) => {
-          const applet = new GGBApplet(
-            { ...params, filename: item.file },
-            true
-          );
-          applet.inject(item.id);
-        });
-      });
-    </script>
   </body>
 </html>

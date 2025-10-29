@@ -1,43 +1,5 @@
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    CommonHTML: { linebreaks: { automatic: true } },
-    "HTML-CSS": { linebreaks: { automatic: true } },
-           SVG: { linebreaks: { automatic: true } }
-  });
-</script>
-
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-    <script src="ASCIIMathML.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
-      async
-    ></script>
-    <script>
-      window.MathJax = {
-        tex: {
-          inlineMath: [["\\(", "\\)"]],
-          displayMath: [["\\[", "\\]"]],
-        },
-        svg: { fontCache: "global" },
-      };
-    </script>
-    <script src="deployggb.js"></script>
-
-    <title>Elektronska lekcija iz matematike</title>
-  </head>
 
   <body>
-    <header>
-      <h1 class="display-4">
-        Електронске лекције о троугловима за старије разреде
-      </h1>
-    </header>
 
     <h2 class="display-4">Углови троугла</h2>
 
@@ -79,7 +41,7 @@
     <br /><br />
 
     <!-- APLET "Zbir unutrasnjih uglova.ggb"  -->
-    <div id="ggb-1" class="ggb-window"></div>
+    <!--<div id="ggb-1" class="ggb-window"></div> -->
 
     <br />
     <p>
@@ -107,7 +69,7 @@
     <br />
 
     <!-- APLET "ZBIR SPOLJASNJIH UGLOVA.ggb" -->
-    <div id="ggb-2" class="ggb-window"></div>
+    <!--<div id="ggb-2" class="ggb-window"></div>-->
 
     <div class="success-paragraph">
       <h4>Задаци за вежбу</h4>
@@ -116,12 +78,12 @@
       </p>
       <p>2. Израчунај вредност угла &phi; са слике.</p>
       <figure style="text-align:center;">
-  <img src="2.png" alt="Zadatak" width="400">
+  <img src="data/courses/Trouglovi_os/2.png" alt="Zadatak" width="400">
   <figcaption></figcaption>
 </figure>
       <p>3.Одреди мере унутрашњих углова троугла са слике.</p>
       <figure style="text-align:center;">
-  <img src="Untitled.png" alt="Zadatak" width="300" height="300">
+  <img src="data/courses/Trouglovi_os/Untitled.png" alt="Zadatak" width="300" height="300">
   <figcaption></figcaption>
 </figure>
       <br />
@@ -132,31 +94,5 @@
       3. 77&deg;, 88&deg;
     </div>
 
-    <script>
-      const ggbMap = [
-        { id: "ggb-1", file: "./zbir_unutrasnjih_uglova_u_trouglu.ggb" },
-        { id: "ggb-2", file: "./zbir_spoljasnjih_uglova.ggb" },
-      ];
-
-      const params = {
-        appName: "classic",
-        width: "100%",
-        height: "100%",
-        showAlgebraInput: false,
-        showMenuBar: false,
-        showToolBar: true,
-        enableLabelDrags: true,
-      };
-
-      window.addEventListener("load", () => {
-        ggbMap.forEach((item) => {
-          const applet = new GGBApplet(
-            { ...params, filename: item.file },
-            true
-          );
-          applet.inject(item.id);
-        });
-      });
-    </script>
   </body>
 </html>

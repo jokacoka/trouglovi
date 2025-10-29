@@ -1,43 +1,6 @@
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    CommonHTML: { linebreaks: { automatic: true } },
-    "HTML-CSS": { linebreaks: { automatic: true } },
-           SVG: { linebreaks: { automatic: true } }
-  });
-</script>
-
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-    <script src="ASCIIMathML.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
-      async
-    ></script>
-    <script>
-      window.MathJax = {
-        tex: {
-          inlineMath: [["\\(", "\\)"]],
-          displayMath: [["\\[", "\\]"]],
-        },
-        svg: { fontCache: "global" },
-      };
-    </script>
-    <script src="deployggb.js"></script>
-
-    <title>Elektronska lekcija iz matematike</title>
-  </head>
+ 
 
   <body>
-    <header>
-      <h1 class="display-4">
-        Електронске лекције о троугловима за старије разреде
-      </h1>
-    </header>
 
     <h2 class="display-4">Површина троугла</h2>
 
@@ -80,8 +43,8 @@
     </p>
     <br />
 
-    <!-- APLET "Povrsina trougla1.ggb" -->
-    <div id="ggb-1" class="ggb-window"></div>
+    <!-- APLET "Povrsina trougla1.ggb" 
+    <div id="ggb-1" class="ggb-window"></div>-->
 
     <h4>Решење.</h4>
     Посматрали смо различите троуглове у квадратној мрежи и допуњавали их до
@@ -118,8 +81,8 @@
     <p>На следећем аплету приказана је формула за површину троугла.</p>
     <br />
 
-    <!-- APLET "Povrsina trougla2.ggb" -->
-    <div id="ggb-2" class="ggb-window"></div>
+    <!-- APLET "Povrsina trougla2.ggb" 
+    <div id="ggb-2" class="ggb-window"></div>-->
 
     <br />
 
@@ -151,7 +114,7 @@
       <h4>Задаци за вежбу</h4>
       <p>1. Израчунај површину троугла на слици.</p>
  <figure style="text-align:center;">
-  <img src="задатак површина троугла.png" alt="Zadatak" width="700" height="300">
+  <img src="data/courses/Trouglovi_os/задатак површина троугла.png" alt="Zadatak" width="700" height="300">
   <figcaption></figcaption>
 </figure>      <br />
       <p>
@@ -174,34 +137,5 @@
       \)
     </div>
 
-    <script>
-      const ggbMap = [
-        { id: "ggb-1", file: "./povrsina_trougla1.ggb" },
-        {
-          id: "ggb-2",
-          file: "./povrsina_trougla2.ggb",
-        },
-      ];
-
-      const params = {
-        appName: "classic",
-        width: "100%",
-        height: "100%",
-        showAlgebraInput: false,
-        showMenuBar: false,
-        showToolBar: true,
-        enableLabelDrags: true,
-      };
-
-      window.addEventListener("load", () => {
-        ggbMap.forEach((item) => {
-          const applet = new GGBApplet(
-            { ...params, filename: item.file },
-            true
-          );
-          applet.inject(item.id);
-        });
-      });
-    </script>
   </body>
 </html>

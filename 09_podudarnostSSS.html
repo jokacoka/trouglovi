@@ -1,43 +1,6 @@
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    CommonHTML: { linebreaks: { automatic: true } },
-    "HTML-CSS": { linebreaks: { automatic: true } },
-           SVG: { linebreaks: { automatic: true } }
-  });
-</script>
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-    <script src="ASCIIMathML.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
-      async
-    ></script>
-    <script>
-      window.MathJax = {
-        tex: {
-          inlineMath: [["\\(", "\\)"]],
-          displayMath: [["\\[", "\\]"]],
-        },
-        svg: { fontCache: "global" },
-      };
-    </script>
-    <script src="deployggb.js"></script>
-
-    <title>Elektronska lekcija iz matematike</title>
-  </head>
 
   <body>
-    <header>
-      <h1 class="display-4">
-        Електронске лекције о троугловима за старије разреде
-      </h1>
-    </header>
 
     <h2 class="display-4">Подударност троуглова и конструкција - став ССС</h2>
 
@@ -81,8 +44,8 @@
       Ако су странице једног троугла једнаке страницама другог троугла, онда су
       та два троугла подударна.
       <br />
-      <!-- APLET "podudarnost ss.ggb" -->
-      <div id="ggb-1" class="ggb-window"></div>
+      <!-- APLET "podudarnost ss.ggb" 
+      <div id="ggb-1" class="ggb-window"></div>-->
       <br />
       Ову подударност записујемо на следећи начин:
       <br />
@@ -115,8 +78,8 @@
       </lo>
     </p>
 
-    <!-- APLET "konstr sss.ggb" -->
-    <div id="ggb-2" class="ggb-window"></div>
+    <!-- APLET "konstr sss.ggb" 
+    <div id="ggb-2" class="ggb-window"></div>-->
 
     <div class="success-paragraph">
       <h4>Задатак за вежбу</h4>
@@ -126,41 +89,9 @@
       <br />
     </div>
 
-    <!-- APLET "konst jednakostranicni.ggb" -->
-    <div id="ggb-3" class="ggb-window"></div>
+    <!-- APLET "konst jednakostranicni.ggb" 
+    <div id="ggb-3" class="ggb-window"></div>-->
     
-    <script>
-      const ggbMap = [
-        { id: "ggb-1", file: "./podudarnost_sss.ggb" },
-        {
-          id: "ggb-2",
-          file: "./konstrsss.ggb",
-        },
-        {
-          id: "ggb-3",
-          file: "./konstrukcijasss.ggb",
-        },
-      ];
-
-      const params = {
-        appName: "classic",
-        width: "100%",
-        height: "100%",
-        showAlgebraInput: false,
-        showMenuBar: false,
-        showToolBar: true,
-        enableLabelDrags: true,
-      };
-
-      window.addEventListener("load", () => {
-        ggbMap.forEach((item) => {
-          const applet = new GGBApplet(
-            { ...params, filename: item.file },
-            true
-          );
-          applet.inject(item.id);
-        });
-      });
-    </script>
+  
   </body>
 </html>
