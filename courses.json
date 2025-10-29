@@ -36,6 +36,11 @@
         "title": "Povrsina trougla"
       },
       {
+        "id": "znacajne_tacke",
+        "file": "07_znacajnetacke",
+        "title": "Znacajne tacke trougla"
+      },
+      {
         "id": "pitagorina_teorema",
         "file": "08_pitagorinateorema",
         "title": "Pitagorina teorema"
