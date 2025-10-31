@@ -1,155 +1,178 @@
+<h2 class="display-4">Пресликавања троугла</h2>
 
+<p>
+  Код подударности троуглова смо већ видели како се троуглови могу кретати и
+  поклапати, тј. како облик и величина остају исти док мењамо њихов положај.
+  Сада ћемо то знање проширити на различите врсте пресликавања: осну симетрију,
+  централну симетрију и транслацију. Кроз њих ћемо истраживати кретање и
+  поклапање троуглова на нов и занимљив начин.
+</p>
 
-  <body>
-    <script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    CommonHTML: { linebreaks: { automatic: true } },
-    "HTML-CSS": { linebreaks: { automatic: true } },
-           SVG: { linebreaks: { automatic: true } }
-  });
-</script>
+<h3 class="display-5">Централна симетрија</h3>
+<h4>Дефиниција.</h4>
+<p>
+  Тачка
+  <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+    <msup><mi>A</mi><mo>&#x2032;</mo></msup>
+  </math>
+  је централносиметрична, или краће симетрична тачки <mi>A</mi> у односу на
+  тачку <mi>O</mi> уколико је O средиште дужи <mi>A</mi
+  ><msup><mi>A</mi><mo>&#x2032;</mo></msup
+  >. Тачка O је сама себи симетрична и назива се центар симетрије.
+</p>
+<p>
+  Када је задата тачка O у равни, свака тачка те равни се пресликава у
+  симетричну тачку у односу на O. Овакво пресликавање се назива централна
+  симетрија. За конструкцију централносиметричне слике троугла, довољно је
+  одредити слике његових темена.
+</p>
 
-
-
-<script>
-      window.MathJax = {
-        tex: {
-          inlineMath: [["\\(", "\\)"]],
-          displayMath: [["\\[", "\\]"]],
-        },
-        svg: { fontCache: "global" },
-      };
-    </script>
-
-    <h2 class="display-4">Пресликавања троугла</h2>
-
-    <p>
-      Код подударности троуглова смо већ видели како се троуглови могу кретати и
-      поклапати, тј. како облик и величина остају исти док мењамо њихов положај.
-      Сада ћемо то знање прошити на различите врсте пресликавања: осну
-      симетрију, централну симетрију и транслацију. Кроз њих ћемо истраживати
-      кретање и поклапање троуглова на нов и занимљив начин.
-    </p>
-
-    <h3 class="display-5">Централна симетрија</h3>
-    <h4>Дефиниција.</h4>
-    <p>
-      Тачка A’ је централносиметрична, или краће симетрична тачки A у односу на
-      тачку O уколико је O средиште дужи АА’. Тачка O је сама себи симетрична и
-      назива се центар симетрије.
-      <br /><br />
-      Када је задата тачка О у равни, свака тачка те равни се пресликава у
-      симетричну тачку у односу на О . Овакво пресликавање се назива централна
-      симетрија. За конструкцију централносиметричне слике троугла, довољно је
-      одредити слике његових темена.
-    </p>
-
-    <div class="deffinition-paragraph"></div>
-    <h3 class="display-5">Интерактивни аплет</h3>
-    На следећем аплету можеш кроз сопствено искуство да откријеш како
-    функционише централна симетрија. Уместо да само читаш објашњење, учићеш кроз
-    покретање и посматрање. Померај клизаче и посматрај како се тачке А, B и C
-    пресликавају у своје централносиметричне слике. Када све клизаче помериш до
-    краја, уочићеш да се добија троугао који је централносиметричан почетном.
-    <br />
-    <!-- APLET "centralna simetrija.ggb" 
-    <div id="ggb-1" class="ggb-window"></div>-->
+<h3 class="display-5">Интерактивни аплет</h3>
+<p>
+  На следећем аплету можеш кроз сопствено искуство да откријеш како функционише
+  централна симетрија. Померај клизаче и посматрај како се тачке
+  <mi>A</mi>, <mi>B</mi> и <mi>C</mi> пресликавају у своје централносиметричне
+  слике <msup><mi>A</mi><mo>&#x2032;</mo></msup
+  >, <msup><mi>B</mi><mo>&#x2032;</mo></msup> и
+  <msup><mi>C</mi><mo>&#x2032;</mo></msup
+  >.
+</p>
 <div style="display: flex; justify-content: center; align-items: center">
-<iframe scrolling="no" title="13_ аплет 1 Централна симетрија (троугао)" src="https://www.geogebra.org/material/iframe/id/vpwa3zqd/width/1536/height/738/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1536px" height="738px" style="border:0px;"> </iframe>  </div>    
-    <br />
-    Поступак конструкције:
-    <lo>
-      <li>
-        Повежи тачку А са центром симетрије (тачком О) повлачењем полуправе из
-        тачке А која пролази кроз тачку О.
-      </li>
-      <li>
-        На продужетку полуправе, са друге стране тачке О пренеси исту дужину као
-        АО, помоћу шестара постављеног у тачки О нацртај k(O,AO)
-      </li>
-      <li>Тачка А’ настаје у пресеку полуправе и кружнице.</li>
-      <li>На исти начин одредити централносиметричне тачке B’ и C’.</li>
-      <li>
-        Када повежеш тачке А’, B’ и C’ добијаш централносиметричан троугао.
-      </li>
-    </lo>
+  <iframe
+    scrolling="no"
+    title="13_ аплет 1 Централна симетрија (троугао)"
+    src="https://www.geogebra.org/material/iframe/id/vpwa3zqd/width/1536/height/738/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false"
+    width="1536px"
+    height="738px"
+    style="border: 0px"
+  ></iframe>
+</div>
 
-    <div class="light-paragraph">
-      <h3 class="display-5">Осна симетрија</h3>
-      <h4>Дефиниција.</h4>
-      Нека је s произвољна права и А тачка која не припада s.
-      <br />
-      Тачка \(A_1\) је осносиметрична, или краће симетрична тачки А у односу на праву
-      s уколико:<br />
-      - \(A_1\) припада нормали из А на s;<br />
-      - \(A_1\) и А се налазе са различитих страна праве s;<br />
-      - \(A_1\) и А су једнако удаљене од праве s.<br />
-      Свака тачка праве s је самој себи осносиметрична у односу на s. Овакво
-      пресликавање се назива осна симетрија, док се права s назива оса
-      симетрије.
-      <br />
-    </div>
+<p>Поступак конструкције:</p>
+<ol>
+  <li>
+    Повежи тачку <mi>A</mi> са центром симетрије <mi>O</mi> повлачењем
+    полуправе.
+  </li>
+  <li>
+    На продужетку полуправе, са друге стране тачке <mi>O</mi> пренеси исту
+    дужину као <mi>A</mi><mi>O</mi>, помоћу шестара.
+  </li>
+  <li>
+    Тачка <msup><mi>A</mi><mo>&#x2032;</mo></msup> настаје у пресеку полуправе и
+    кружнице.
+  </li>
+  <li>
+    На исти начин одредити централносиметричне тачке
+    <msup><mi>B</mi><mo>&#x2032;</mo></msup> и
+    <msup><mi>C</mi><mo>&#x2032;</mo></msup
+    >.
+  </li>
+  <li>
+    Повезивањем тачака <msup><mi>A</mi><mo>&#x2032;</mo></msup
+    >, <msup><mi>B</mi><mo>&#x2032;</mo></msup> и
+    <msup><mi>C</mi><mo>&#x2032;</mo></msup> добијаш централносиметричан
+    троугао.
+  </li>
+</ol>
 
-    <div class="light-paragraph">
-      <h3 class="display-5">Интерактивни аплет</h3>
+<h3 class="display-5">Осна симетрија</h3>
+<h4>Дефиниција.</h4>
+<p>
+  Нека је <mi>s</mi> произвољна права и <mi>A</mi> тачка која не припада
+  <mi>s</mi>. Тачка <msub><mi>A</mi><mn>1</mn></msub> је осносиметрична, или
+  симетрична тачки <mi>A</mi> у односу на праву <mi>s</mi> уколико:
+</p>
+<ul>
+  <li>
+    <msub><mi>A</mi><mn>1</mn></msub> припада нормали из <mi>A</mi> на
+    <mi>s</mi>;
+  </li>
+  <li>
+    <msub><mi>A</mi><mn>1</mn></msub> и <mi>A</mi> се налазе са различитих
+    страна праве <mi>s</mi>;
+  </li>
+  <li>
+    <msub><mi>A</mi><mn>1</mn></msub> и <mi>A</mi> су једнако удаљене од праве
+    <mi>s</mi>.
+  </li>
+</ul>
 
-      На следећем аплету кликом на дугме ПОКРЕНИ АНИМАЦИЈУ \( \triangle ABC \)
-      се слика у \( \triangle A_1B_1C_1 \) у односу на осу симетрије s. Темена
-      \( \triangle ABC \) можеш померати, па ће се мењати и облик троугла. На
-      тај начин можеш уочити различите облике троуглова и њихове симетричне
-      слике, али правило пресликавања увек остаје исто.
-      <br />
-      <!-- APLET "osna simetrija.ggb" 
-      <div id="ggb-2" class="ggb-window"></div>-->
+<h3 class="display-5">Интерактивни аплет</h3>
+<p>
+  На следећем аплету кликом на дугме ПОКРЕНИ АНИМАЦИЈУ <mi>&#x25B3;</mi>ABC се
+  слика у <msub><mi>A</mi><mn>1</mn></msub
+  ><msub><mi>B</mi><mn>1</mn></msub
+  ><msub><mi>C</mi><mn>1</mn></msub> у односу на осу симетрије <mi>s</mi>.
+</p>
 <div style="display: flex; justify-content: center; align-items: center">
-<iframe scrolling="no" title="13_ аплет 2 Осна симетрија (троугао)" src="https://www.geogebra.org/material/iframe/id/jbwzwcgn/width/1336/height/599/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1336px" height="599px" style="border:0px;"> </iframe>  </div>    
-    </div>
+  <iframe
+    scrolling="no"
+    title="13_ аплет 2 Осна симетрија (троугао)"
+    src="https://www.geogebra.org/material/iframe/id/jbwzwcgn/width/1336/height/599/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false"
+    width="1336px"
+    height="599px"
+    style="border: 0px"
+  ></iframe>
+</div>
 
-    <div class="light-paragraph">
-      <h3 class="display-5">Транслација</h3>
-      <h4>Дефиниција.</h4>
-      Транслација је пресликавање при којем се свака тачка равни помера у истом
-      правцу, за исту дужину и у истом смеру. То померање одређује вектор \( \vec{v} \).
-      Kaда је вектор \( \vec{v} \) задат неком усмереном дужи, онда за сваку тачку А постоји
-      јединствена тачка А’, таква да је \( \vec{AA}=\vec{v} \) . Кажемо да је тачка А’,
-      добијена транслацијом тачке А за вектор \( \vec{v} \), односно да је А’ слика тачке А
-      при транслацији за вектор \( \vec{v} \).
-    </div>
+<h3 class="display-5">Транслација</h3>
+<h4>Дефиниција.</h4>
+<p>
+  Транслација је пресликавање при којем се свака тачка равни помера у истом
+  правцу, за исту дужину и у истом смеру. То померање одређује вектор
+  <!-- ignore prettier -->
+  <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+    <mover><mi>v</mi><mo>→</mo></mover>
+  </math>
+  . За сваку тачку <mi>A</mi> постоји јединствена тачка
+  <msup><mi>A</mi><mo>&#x2032;</mo></msup> таква да
 
-    <div class="light-paragraph">
-      <h3 class="display-5">Интерактивни аплет</h3>
+  <!-- ignore prettier -->
+  <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+    <mover>
+      <mrow><mi>A</mi><mo>A'</mo></mrow>
+      <mo>→</mo>
+    </mover>
+    <mo>=</mo>
+    <mover><mi>v</mi><mo>→</mo></mover>
+  </math>
 
-      На следећем аплету можеш померити клизач и видети како се \( \triangle ABC
-      \) транслира за вектор који је дефинисан клизачем. Уочићеш да се троугао
-      преслика у нови положај, али да му облик и величина остају исти.
-      <br />
-      <!-- APLET "translacija.ggb" 
-      <div id="ggb-3" class="ggb-window"></div>-->
+  .
+</p>
+
+<h3 class="display-5">Интерактивни аплет</h3>
+<p>
+  На следећем аплету можеш померити клизач и видети како се <mi>&#x25B3;</mi>ABC
+  транслира за вектор који је дефинисан клизачем.
+</p>
 <div style="display: flex; justify-content: center; align-items: center">
-<iframe scrolling="no" title="13_ аплет 3 Транслација (троугао)" src="https://www.geogebra.org/material/iframe/id/sruhghwm/width/1320/height/560/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1320px" height="560px" style="border:0px;"> </iframe>  </div>    
-    </div>
+  <iframe
+    scrolling="no"
+    title="13_ аплет 3 Транслација (троугао)"
+    src="https://www.geogebra.org/material/iframe/id/sruhghwm/width/1320/height/560/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false"
+    width="1320px"
+    height="560px"
+    style="border: 0px"
+  ></iframe>
+</div>
 
-    <div class="success-paragraph">
-      <h4>Задатак за вежбу</h4>
-      <p>
-        1.Нацртај троугао по сопственом избору и пресликај га централном
-        симетријом, осном симетријом и транслацијом, па у одговарајућем аплету
-        провери решење - помери темена и провери како се твој троугао понаша при
-        пресликавању.
-      </p>
-    </div>
+<div class="success-paragraph">
+  <h4>Задатак за вежбу</h4>
+  <p>
+    1. Нацртај троугао по сопственом избору и пресликај га централном
+    симетријом, осном симетријом и транслацијом, па у одговарајућем аплету
+    провери решење.
+  </p>
+</div>
 
-    <div style="display: flex; justify-content: space-between">
-    <button
-      class="btn btn-link"
-      onclick="onLessonClick(this)"
-      data-course-id="trouglovi_os"
-      data-lesson-id="podudarnostssu"
-    >
-      Претходна лекција
-    </button>
-    
-    </div>
-    
-  </body>
-
+<div style="display: flex; justify-content: space-between">
+  <button
+    class="btn btn-link"
+    onclick="onLessonClick(this)"
+    data-course-id="trouglovi_os"
+    data-lesson-id="podudarnostssu"
+  >
+    Претходна лекција
+  </button>
+</div>

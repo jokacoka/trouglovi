@@ -1,134 +1,182 @@
+<h2 class="display-4">Углови троугла</h2>
 
-  <body>
-    <script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    CommonHTML: { linebreaks: { automatic: true } },
-    "HTML-CSS": { linebreaks: { automatic: true } },
-           SVG: { linebreaks: { automatic: true } }
-  });
-</script>
+<p>
+  Проучавање збира углова троугла пружа основу за разумевање геометријских
+  односа између његових страница и углова. У овој лекцији истраживаћемо два
+  важна својства:<br />
+  1) збир унутрашњих углова троугла;<br />
+  2) збир спољашњих углова троугла.<br />
+  Ако би само научили та својства напамет, брзо би их заборавили. Али, ако их
+  откријеш кроз истраживање и посматрање, много боље ћеш их разумети. Надам се
+  да ће ти ова лекција бити занимљива и корисна.
+</p>
 
+<h3 class="display-5">Приказ унутрашњих и спољашњих углова троугла</h3>
+<p>
+  На слици је приказан
+  <!-- prettier-ignore -->
+  <math xmlns="http://www.w3.org/1998/Math/MathML">
+      <mo>△</mo><mi>A</mi><mi>B</mi><mi>C</mi> 
+    </math>
+  . Конвексни углови &#x03B1;, &#x03B2; и &#x03B3; јесу унутрашњи углови
+  троугла. Углови који су упоредни унутрашњим угловима троугла називају се
+  спољашњи углови троугла и обележавају се са
 
+  <!-- prettier-ignore -->
+  <math xmlns="http://www.w3.org/1998/Math/MathML">
+      <msub><mi>&#x03B1;</mi><mn>1</mn></msub>
+    </math>
+  ,
+  <!-- prettier-ignore -->
+  <math xmlns="http://www.w3.org/1998/Math/MathML">
+      <msub><mi>&#x03B2;</mi><mn>1</mn></msub>
+    </math>
+  и
+  <!-- prettier-ignore -->
+  <math xmlns="http://www.w3.org/1998/Math/MathML">
+      <msub><mi>&#x03B3;</mi><mn>1</mn></msub>
+    </math>
+  .
+  <br />
+  <figure style="text-align: center">
+    <img
+      src="data/courses/Trouglovi_os/8.png"
+      alt="Uglovi trougla"
+      width="600"
+      height="400"
+    />
+    <figcaption style="color: gray">
+      Слика 1. Унутрашњи и спољашњи углови троугла
+    </figcaption>
+  </figure>
+  <br />
+</p>
 
-<script>
-      window.MathJax = {
-        tex: {
-          inlineMath: [["\\(", "\\)"]],
-          displayMath: [["\\[", "\\]"]],
-        },
-        svg: { fontCache: "global" },
-      };
-    </script>
+<div class="deffinition-paragraph">
+  <h4>Тврђење.</h4>
+  Збир унутрашњих углова троугла је 180&deg;.
+</div>
 
-    <h2 class="display-4">Углови троугла</h2>
+<h3 class="display-5">Интерактивни аплет</h3>
+<p>
+  Кроз следећи аплет имаћеш прилику да самостално истражиш и провериш ово
+  правило. Можеш превући углове &#x03B1; и &#x03B2; до темена C и сазнати колики
+  је збир унутрашњих углова троугла.
+</p>
+<br /><br />
 
-    <p>
-      Проучавање збира углова троугла пружа основу за разумевање геометријских
-      односа између његових страница и углова. У овој лекцији истраживаћемо два
-      важна својства:<br/> 1) збир унутрашњих углова троугла;<br/> 2) збир спољашњих
-      углова троугла.<br />
-      Ако би само научили та својства напамет, брзо би их заборавили. Али, ако
-      их откријеш кроз истраживање и посматрање, много боље ћеш их разумети.
-      Надам се да ће ти ова лекција бити занимљива и корисна.
-    </p>
-
-    <h3 class="display-5">Приказ унутрашњих и спољашњих углова троугла</h3>
-    <p>
-      На слици је приказан \( \triangle ABC \). Конвексни углови &alpha;, &beta;
-      и &gamma; јесу унутрашњи углови троугла. Углови који су упоредни
-      унутрашњим угловима троугла називају се спољашњи углови троугла и
-      обележавају се са \( &alpha;_1, &beta;_1\) и \(&gamma;_1 \).
-      <br />
-      <figure style="text-align:center;">
-      <img src="data/courses/Trouglovi_os/8.png" alt="Uglovi trougla" width="600" height="400">
-      <figcaption style="color: gray;">Слика 1. Унутрашњи и спољашњи углови троугла</figcaption>
-      </figure>
-      <br />
-    </p>
-
-    <div class="deffinition-paragraph">
-      <h4>Тврђење.</h4>
-      Збир унутрашњих углова троугла је 180&deg;.
-    </div>
-
-    <h3 class="display-5">Интерактивни аплет</h3>
-    <p>
-      Кроз следећи аплет имаћеш прилику да самостално истражиш и провериш ово
-      правило. Можеш превући углове &alpha; и &beta; до темена C и сазнати
-      колики је збир унутрашњих углова троугла.
-    </p>
-    <br /><br />
-
-    <!-- APLET "Zbir unutrasnjih uglova.ggb"  -->
+<!-- APLET "Zbir unutrasnjih uglova.ggb"  -->
 <div style="display: flex; justify-content: center; align-items: center">
-<iframe scrolling="no" title="03_ аплет 1 Збир унутрашњих углова у троуглу" src="https://www.geogebra.org/material/iframe/id/bj2y8map/width/1368/height/654/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1368px" height="654px" style="border:0px;"> </iframe>  </div>
-    <br />
-    <p>
-      <b>Пример.</b> Израчунај други оштар угао правоуглог троугла ако је један угао
-      69&deg;.
-    </p>
-    <p>
-      <b>Решење.</b> \[\begin{aligned} 69&deg;+&beta;+90&deg;=180&deg; \\
-      &beta;=180&deg;-159&deg; \\ &beta;=21&deg;\end{aligned}. \]
-    </p>
+  <iframe
+    scrolling="no"
+    title="03_ аплет 1 Збир унутрашњих углова у троуглу"
+    src="https://www.geogebra.org/material/iframe/id/bj2y8map/width/1368/height/654/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false"
+    width="1368px"
+    height="654px"
+    style="border: 0px"
+  >
+  </iframe>
+</div>
+<br />
+<p>
+  <b>Пример.</b> Израчунај други оштар угао правоуглог троугла ако је један угао
+  69&deg;.
+</p>
+<p>
+  <b>Решење.</b>
+  <!-- prettier-ignore -->
+  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+      <mrow>
+        <mn>69</mn><mo>°</mo><mo>+</mo><mi>&#x03B2;</mi><mo>+</mo><mn>90</mn><mo>°</mo><mo>=</mo><mn>180</mn><mo>°</mo>
+      </mrow>
+      <mrow>
+        <mi>&#x03B2;</mi><mo>=</mo><mn>180</mn><mo>°</mo><mo>-</mo><mn>159</mn><mo>°</mo>
+      </mrow>
+      <mrow> <mi>&#x03B2;</mi><mo>=</mo><mn>21</mn><mo>°</mo> </mrow>
+    </math>
+</p>
 
-    <div class="deffinition-paragraph">
-      <h4>Тврђење.</h4>
-      Збир спољашњих углова троугла је 360&deg;.
-    </div>
+<div class="deffinition-paragraph">
+  <h4>Тврђење.</h4>
+  Збир спољашњих углова троугла је 360&deg;.
+</div>
 
-    <h3 class="display-5">Интерактивни аплет</h3>
-    <p>
-      На следећем аплету је приказано да је збир спољашњих углова троугла
-      константан, тј. да се померањем било ког темена троугла мењају вредности
-      углова \( &alpha;_1, &beta;_1 \) и \(&gamma;_1\), али вредност збира увек
-      износи 360&deg;. Пробај да помераш темена троугла и посматраш како се
-      углови мењају.
-    </p>
-    <br />
+<h3 class="display-5">Интерактивни аплет</h3>
+<p>
+  На следећем аплету је приказано да је збир спољашњих углова троугла
+  константан, тј. да се померањем било ког темена троугла мењају вредности
+  углова
+  <!-- prettier-ignore -->
+  <math xmlns="http://www.w3.org/1998/Math/MathML">
+      <msub><mi>&#x03B1;</mi><mn>1</mn></msub> </math>
+  ,
+  <!-- prettier-ignore -->
+  <math xmlns="http://www.w3.org/1998/Math/MathML">
+      <msub><mi>&#x03B2;</mi><mn>1</mn></msub>
+    </math>
+  и
+  <!-- prettier-ignore -->
+  <math xmlns="http://www.w3.org/1998/Math/MathML">
+      <msub><mi>&#x03B3;</mi><mn>1</mn></msub>
+    </math>
+  , али вредност збира увек износи 360&deg;. Пробај да помераш темена троугла и
+  посматраш како се углови мењају.
+</p>
+<br />
 
-    <!-- APLET "ZBIR SPOLJASNJIH UGLOVA.ggb" -->
+<!-- APLET "ZBIR SPOLJASNJIH UGLOVA.ggb" -->
 <div style="display: flex; justify-content: center; align-items: center">
-<iframe scrolling="no" title="03_ аплет 2 Збир спољашњих углова троугла" src="https://www.geogebra.org/material/iframe/id/cpqdemyy/width/1368/height/654/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1368px" height="654px" style="border:0px;"> </iframe>  </div>
-    <div class="success-paragraph">
-      <h4>Задаци за вежбу</h4>
-      <p>
-        1. Израчунај трећи угао троугла ако су мере два угла 33&deg; и 66&deg;.
-      </p>
-      <p>2. Израчунај вредност угла &phi; са слике.</p>
-      <figure style="text-align:center;">
-  <img src="data/courses/Trouglovi_os/2.png" alt="Zadatak" width="400">
-  <figcaption></figcaption>
-</figure>
-      <p>3.Одреди мере унутрашњих углова троугла са слике.</p>
-      <figure style="text-align:center;">
-  <img src="data/courses/Trouglovi_os/Untitled.png" alt="Zadatak" width="300" height="300">
-  <figcaption></figcaption>
-</figure>
-      <br />
-      <b>Решење</b>
-      <br />
-      1. 81&deg; <br />
-      2. &phi;=64&deg; <br />
-      3. 77&deg;, 88&deg;
-    </div>
+  <iframe
+    scrolling="no"
+    title="03_ аплет 2 Збир спољашњих углова троугла"
+    src="https://www.geogebra.org/material/iframe/id/cpqdemyy/width/1368/height/654/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false"
+    width="1368px"
+    height="654px"
+    style="border: 0px"
+  >
+  </iframe>
+</div>
+<div class="success-paragraph">
+  <h4>Задаци за вежбу</h4>
+  <p>1. Израчунај трећи угао троугла ако су мере два угла 33&deg; и 66&deg;.</p>
+  <p>2. Израчунај вредност угла &#x03C6; са слике.</p>
+  <figure style="text-align: center">
+    <img src="data/courses/Trouglovi_os/2.png" alt="Zadatak" width="400" />
+    <figcaption></figcaption>
+  </figure>
+  <p>3. Одреди мере унутрашњих углова троугла са слике.</p>
+  <figure style="text-align: center">
+    <img
+      src="data/courses/Trouglovi_os/Untitled.png"
+      alt="Zadatak"
+      width="300"
+      height="300"
+    />
+    <figcaption></figcaption>
+  </figure>
+  <br />
+  <b>Решење</b>
+  <br />
+  1. 81&deg; <br />
+  2. &#x03C6;=64&deg; <br />
+  3. 77&deg;, 88&deg;
+</div>
 
 <div style="display: flex; justify-content: space-between">
-    <button
-      class="btn btn-link"
-      onclick="onLessonClick(this)"
-      data-course-id="trouglovi_os"
-      data-lesson-id="stranice"
-    >
-      Претходна лекција
-    </button>
-    <button
-      class="btn btn-link"
-      onclick="onLessonClick(this)"
-      data-course-id="trouglovi_os"
-      data-lesson-id="vrstetrouglova"
-    >
-      Следећа лекција
-    </button>
-    </div>
-  </body>
+  <button
+    class="btn btn-link"
+    onclick="onLessonClick(this)"
+    data-course-id="trouglovi_os"
+    data-lesson-id="stranice"
+  >
+    Претходна лекција
+  </button>
+  <button
+    class="btn btn-link"
+    onclick="onLessonClick(this)"
+    data-course-id="trouglovi_os"
+    data-lesson-id="vrstetrouglova"
+  >
+    Следећа лекција
+  </button>
+</div>

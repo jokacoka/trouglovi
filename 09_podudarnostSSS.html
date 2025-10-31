@@ -1,137 +1,152 @@
+<h2 class="display-4">Подударност троуглова и конструкција - став ССС</h2>
 
+<p>
+  У настави математике у основној школи, појам подударности троуглова уводи се
+  интуитивно: два троугла се сматрају подударним ако постоји кретање у простору
+  којим се могу довести до поклапања. При томе, одговарајуће странице и углови
+  једног троугла су једнаки страницама и угловима другог троугла.
+  <br /><br />
+  Замислите да правите троугаону јастучницу. Наставница вам је дала папирни
+  модел који треба да поставите на тканину и прекопирате облик. Када упоредите
+  два иста дела, примећујете да су им странице исте. Да ли мислите да су ови
+  троуглови потпуно подударни? У овој лекцији ћете видети како став подударности
+  ССС показује када су троуглови подударни и научити како се помоћу тог става
+  конструише троугао у интерактивном аплету.
+</p>
 
-  <body>
-    <script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    CommonHTML: { linebreaks: { automatic: true } },
-    "HTML-CSS": { linebreaks: { automatic: true } },
-           SVG: { linebreaks: { automatic: true } }
-  });
-</script>
+<h3 class="display-5">Како препознати став подударности ССС?</h3>
 
+<p>
+  Троугао је одређен ако су познате величине свих његових основних елемената –
+  све три странице и сва три угла. Међутим, троугао је одређен и када су познате
+  величине само три његова елемента. Први такав случај је да је троугао одређен
+  ако су познате величине његових страница. Ово тврђење записујемо скраћеницом
+  ССС и читамо: страница, страница, страница. Подударност троуглова обележава се
+  симболом &cong;, па нпр. за троуглове \( \triangle ABC \) и \( \triangle
+  A_1B_1C_1 \) пишемо:
+</p>
 
+<div style="text-align: center; margin: 1em 0">
+  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+    <!-- ignore prettier -->
+    <mrow>
+      <mi>A</mi><mi>B</mi><mo>=</mo>
+      <msub> <mi>A</mi><mn>1</mn> </msub>
+      <msub><mi>B</mi><mn>1</mn></msub>
+      <mo>,</mo> <mi>B</mi><mi>C</mi><mo>=</mo>
+      <msub><mi>B</mi><mn>1</mn></msub>
+      <msub><mi>C</mi><mn>1</mn></msub>
+      <mo>,</mo> <mi>C</mi><mi>A</mi><mo>=</mo>
+      <msub><mi>C</mi><mn>1</mn></msub>
+      <msub><mi>A</mi><mn>1</mn></msub>
+      <mo>&#x21D2;</mo>
+      <mi>&#x25B3;</mi><mi>A</mi><mi>B</mi><mi>C</mi>
+      <mo>&#x2245;</mo>
+      <mi>&#x25B3;</mi>
+      <msub><mi>A</mi><mn>1</mn></msub>
+      <msub><mi>B</mi><mn>1</mn></msub>
+      <msub><mi>C</mi><mn>1</mn></msub>
+    </mrow>
+  </math>
+</div>
 
-<script>
-      window.MathJax = {
-        tex: {
-          inlineMath: [["\\(", "\\)"]],
-          displayMath: [["\\[", "\\]"]],
-        },
-        svg: { fontCache: "global" },
-      };
-    </script>
+<p>
+  Притом, водимо рачуна да темена троуглова наводимо у складу са начином на који
+  се ти троуглови могу поклопити.
+  <br /><br />
+  У наставку је аплет где кликом на дугме ПОКЛОПИ ТРОУГЛОВЕ можете пратити како
+  се један троугао постепено помера и ротира да би се поклопио са другим. Аплет
+  можете зауставити у било ком тренутку или ресетовати како би троугао поново
+  био на почетном положају.
+</p>
 
-    <h2 class="display-4">Подударност троуглова и конструкција - став ССС</h2>
+<div class="deffinition-paragraph">
+  <h4>Тврђење</h4>
+  Ако су странице једног троугла једнаке страницама другог троугла, онда су та
+  два троугла подударна.
+  <br /><br />
+  <div style="display: flex; justify-content: center; align-items: center">
+    <iframe
+      scrolling="no"
+      title="09_ аплет 1 Подударност ССС"
+      src="https://www.geogebra.org/material/iframe/id/dquffsz8/width/1536/height/738/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/true/ctl/false"
+      width="1536px"
+      height="738px"
+      style="border: 0px"
+    ></iframe>
+  </div>
+</div>
 
-    <p>
-      У настави математике у основној школи, појам подударности троуглова уводи
-      се интуитивно: два троугла се сматрају подударним ако постоји кретање у
-      простору којим се могу довести до поклапања. При томе, одговарајуће
-      странице и углови једног троугла су једнаки страницама и угловима другог
-      троугла.
-      <br />
-      <br />
-      Замислите да правите троугаону јастучницу. Наставница вам је дала папирни
-      модел који треба да поставите на тканину и прекопирате облик. Када
-      упоредите два иста дела, примећујете да су им странице исте. Да ли мислите
-      да су ови троуглови потпуно подударни? У овој лекцији ћете видети како
-      став подударности ССС показује када су троуглови подударни и научити како
-      се помоћу тог става конструише троугао у интерактивном аплету.
-    </p>
+<h3 class="display-5">Конструкција троугла - интерактивни аплет</h3>
 
-    <h3 class="display-5">Како препознати став подударности ССС?</h3>
+<p>
+  <b>Пример.</b> <i>Конструиши троугао чије су странице 7cm, 6cm и 4cm.</i>
+  <br /><br />
+  На следећем аплету је приказ конструкције троугла по ставу ССС. Примећујемо да
+  су сви потребни елементи за конструкцију већ дати, па можемо пратити кораке и
+  конструисати троугао. Испод графичког приказа налази се навигациона трака која
+  омогућава кретање кроз кораке конструкције. Кораке можеш пратити ручно или
+  аутоматски, а тајмер подешава време између узастопних корака.
+</p>
 
-    <p>
-      Троугао је одређен ако су познате величине свих његових основних елемената
-      – све три странице и сва три угла. Међутим, троугао је одређен и када су
-      познате величине само три његова елемента. Први такав случај је да је
-      троугао одређен ако су познате величине његових страница. Ово тврђење
-      записујемо скраћеницом ССС и читамо: страница, страница, страница.
-      Подударност троуглова обележава се симболом &cong;, па нпр. за троуглове
-      \( \triangle ABC \) и \( \triangle A_1B_1C_1 \) пишемо \( \triangle ABC
-      \cong \triangle A_1B_1C_1 \). Притом, водимо рачуна да темена троуглова
-      наводимо у складу са начином на који се ти троуглови могу поклопити.
-      <br /><br />
-      У наставку је аплет где кликом на дугме ПОКЛОПИ ТРОУГЛОВЕ можете пратити
-      како се један троугао постепено помера и ротира да би се поклопио са
-      другим. Аплет можете зауставити у било ком тренутку или ресетовати како би
-      троугао поново био на почетном положају.
-    </p>
+<p>Поступак конструкције:</p>
 
-    <div class="deffinition-paragraph">
-      <h4>Тврђење.</h4>
-      Ако су странице једног троугла једнаке страницама другог троугла, онда су
-      та два троугла подударна.
-      <br />
-      <!-- APLET "podudarnost ss.ggb" 
-      <div id="ggb-1" class="ggb-window"></div>-->
+<ol>
+  <li>Конструишемо задате елементе.</li>
+  <li>Нацртамо произвољну полуправу са почетком у тачки А.</li>
+  <li>
+    На полуправу са почетком у тачки А пренесемо дуж дужине 6cm и означимо тачку
+    B.
+  </li>
+  <li>Taчку C добијамо у пресеку кружница k(A,4cm) и k(B,7cm).</li>
+  <li>Повезивањем дужи АC и BC формирамо троугао.</li>
+</ol>
+
 <div style="display: flex; justify-content: center; align-items: center">
-<iframe scrolling="no" title="09_ аплет 1 Подударност ССС" src="https://www.geogebra.org/material/iframe/id/dquffsz8/width/1536/height/738/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/true/ctl/false" width="1536px" height="738px" style="border:0px;"> </iframe>  </div>      
-      <br />
-      Ову подударност записујемо на следећи начин:
-      <br />
-      \[ \begin{aligned} AB &= A_1B_1 \\ BC &= B_1C_1 \\ CA &= C_1A_1 \\
-      \Rightarrow\;&\triangle ABC \cong \triangle A_1B_1C_1 \end{aligned}. \]
-    </div>
+  <iframe
+    scrolling="no"
+    title="09_ аплет 2 Конструкција троугла ССС, пример 1"
+    src="https://www.geogebra.org/material/iframe/id/ra9ufyfr/width/1368/height/616/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false"
+    width="1368px"
+    height="616px"
+    style="border: 0px"
+  ></iframe>
+</div>
 
-    <h3 class="display-5">Конструкција троугла - интерактивни аплет</h3>
-    <p>
-      <br />
-      <b>Пример.</b> <i>Конструиши троугао чије су странице 7cm, 6cm и 4cm .</i>
-      <br />
-      На следећем аплету је приказ конструкције троугла по ставу ССС.
-      Примећујемо да су сви потребни елементи за конструкцију већ дати, па
-      можемо пратити кораке и конструисати троугао. Испод графичког приказа
-      налази се навигациона трака која омогућава кретање кроз кораке
-      конструкције. Кораке можеш пратити ручно или аутоматски, а тајмер подешава
-      време између узастопних корака.
-      <br />
-      Поступак конструкције:
-      <lo>
-        <li>Конструишемо задате елементе.</li>
-        <li>Нацртамо произвољну полуправу са почетком у тачки А.</li>
-        <li>
-          На полуправу са почетком у тачки А пренесемо дуж дужине 6cm и означимо
-          тачку B.
-        </li>
-        <li>Taчку C добијамо у пресеку кружница k(A,4cm) и k(B,7cm).</li>
-        <li>Повезивањем дужи АC и BC формирамо троугао.</li>
-      </lo>
-    </p>
+<div class="success-paragraph">
+  <h4>Задатак за вежбу</h4>
+  <p>1. Конструиши једнакостраничан троугао странице 3cm.</p>
+  <br />
+  <b>Решење.</b>
+  <br />
+</div>
 
-    <!-- APLET "konstr sss.ggb" 
-    <div id="ggb-2" class="ggb-window"></div>-->
 <div style="display: flex; justify-content: center; align-items: center">
-<iframe scrolling="no" title="09_ аплет 2 Конструкција троугла ССС, пример 1 " src="https://www.geogebra.org/material/iframe/id/ra9ufyfr/width/1368/height/616/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1368px" height="616px" style="border:0px;"> </iframe>  </div>
-    <div class="success-paragraph">
-      <h4>Задатак за вежбу</h4>
-      <p>1.Конструиши једнакостраничан троугао странице 3cm.</p>
-      <br />
-      <b>Решење.</b>
-      <br />
-    </div>
+  <iframe
+    scrolling="no"
+    title="09_ аплет 3 Задатак 6. Конструкција једнакостраничног троугла ССС"
+    src="https://www.geogebra.org/material/iframe/id/fnvutndx/width/1288/height/444/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false"
+    width="1288px"
+    height="444px"
+    style="border: 0px"
+  ></iframe>
+</div>
 
-    <!-- APLET "konst jednakostranicni.ggb" 
-    <div id="ggb-3" class="ggb-window"></div>-->
-<div style="display: flex; justify-content: center; align-items: center">
-<iframe scrolling="no" title="09_ аплет 3 Задатак 6.Конструкција једнакостраничног троугла ССС " src="https://www.geogebra.org/material/iframe/id/fnvutndx/width/1288/height/444/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1288px" height="444px" style="border:0px;"> </iframe>  </div>     
- <div style="display: flex; justify-content: space-between">
-    <button
-      class="btn btn-link"
-      onclick="onLessonClick(this)"
-      data-course-id="trouglovi_os"
-      data-lesson-id="pitagorina"
-    >
-      Претходна лекција
-    </button>
-    <button
-      class="btn btn-link"
-      onclick="onLessonClick(this)"
-      data-course-id="trouglovi_os"
-      data-lesson-id="podudarnostsus"
-    >
-      Следећа лекција
-    </button> 
-    </div>
-</body>
-
+<div style="display: flex; justify-content: space-between; margin-top: 20px">
+  <button
+    class="btn btn-link"
+    onclick="onLessonClick(this)"
+    data-course-id="trouglovi_os"
+    data-lesson-id="pitagorina"
+  >
+    Претходна лекција
+  </button>
+  <button
+    class="btn btn-link"
+    onclick="onLessonClick(this)"
+    data-course-id="trouglovi_os"
+    data-lesson-id="podudarnostsus"
+  >
+    Следећа лекција
+  </button>
+</div>

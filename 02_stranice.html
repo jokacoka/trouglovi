@@ -1,147 +1,149 @@
+<h2 class="display-4">Странице троугла</h2>
 
+<p>
+  Када бисмо покушали да правимо троугао од штапића, сламчица или канапа
+  приметили бисмо да се не може направити од било које три дужине, јер неке
+  комбинације једноставно не функционишу. Странице троугла су међусобно повезане
+  и имају посебна правила која одређују облик троугла. У овој лекцији ћемо се
+  бавити неједнакошћу троугла, односно правилима која одређују како су странице
+  међусобно повезане. Такође ћемо обрадити обим троугла, који је директно
+  повезан са страницама.
+</p>
 
-  <body>
+<h3 class="display-5">Неједнакост троугла</h3>
 
-    <script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    CommonHTML: { linebreaks: { automatic: true } },
-    "HTML-CSS": { linebreaks: { automatic: true } },
-           SVG: { linebreaks: { automatic: true } }
-  });
-</script>
+<p>
+  Померањем клизача у аплету можеш самостално открити под којим условима се може
+  формирати троугао. Обрати пажњу на дужине страница и покушај да уочиш када се
+  троугао појавио, а када не може да се формира. Запиши неколико примера дужина
+  страница код којих настаје троугао и неколико код којих не може да се формира.
+  На овај начин можеш брзо да уочиш правило о повезаности страница троугла, без
+  потребе да црташ више различитих примера.
+</p>
 
+<h3 class="display-5">Интерактивни аплет</h3>
 
+<p>На следећем аплету помери клизаче и уочи законитости.</p>
 
-<script>
-      window.MathJax = {
-        tex: {
-          inlineMath: [["\\(", "\\)"]],
-          displayMath: [["\\[", "\\]"]],
-        },
-        svg: { fontCache: "global" },
-      };
-    </script>
+<br />
 
-    <h2 class="display-4">Странице троугла</h2>
-
-    <p>
-      Када бисмо покушали да правимо троугао од штапића, сламчица или канапа
-      приметили бисмо да се не може направити од било које три дужине, јер неке
-      комбинације једноставно не функционишу. Странице троугла су међусобно
-      повезане и имају посебна правила која одређују облик троугла. У овој
-      лекцији ћемо се бавити неједнакошћу троугла, односно правилима која
-      одређују како су странице међусобно повезане. Такође ћемо обрадити обим
-      троугла, који је директно повезан са страницама.
-    </p>
-
-    <h3 class="display-5">Неједнакост троугла</h3>
-    <p>
-      Померањем клизача у аплету можеш самостално открити под којим условима се
-      може формирати троугао. Обрати пажњу на дужине страница и покушај да уочиш
-      када се троугао појавио, а када не може да се формира. Запиши неколико
-      примера дужина страница код којих настаје троугао и неколико код којих не
-      може да се формира. На овај начин можеш брзо да уочиш правило о
-      повезаности страница троугла, без потребе да црташ више различитих
-      примера.
-    </p>
-
-    <h3 class="display-5">Интерактивни аплет</h3>
-
-    <p>На следећем аплету помери клизаче и уочи законитости.</p>
-    <br />
-
-    <!-- APLET "nejednakost trouglova.ggb" -->
 <div style="display: flex; justify-content: center; align-items: center">
-    <iframe scrolling="no" title="02_аплет 1 Неједнакост троугла" src="https://www.geogebra.org/material/iframe/id/h8n22eks/width/1357/height/568/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1357px" height="568px" style="border:0px;"> </iframe>
-  </div>
-    <br />
-    <p>
-      У следећем делу лекције сазнаћеш које тачно правило важи за странице
-      троугла.
-    </p>
-    <br />
+  <iframe
+    scrolling="no"
+    title="02_аплет 1 Неједнакост троугла"
+    src="https://www.geogebra.org/material/iframe/id/h8n22eks/width/1357/height/568/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false"
+    width="1357px"
+    height="568px"
+    style="border: 0px"
+  ></iframe>
+</div>
 
-    <div class="deffinition-paragraph">
-      <h4>Тврђење.</h4>
-      Ако су задате неке три дужи а, b и c, онда неједнакости a< b+c, b< a+c и
-      c< a+b представљају услове које те дужи морају задовољавати да би биле
-      странице неког троугла.
-    </div>
-    <br />
+<br />
 
-    <h3 class="display-5">Обим троугла</h3>
-    <p></p>
-    <div class="deffinition-paragraph">
-      <h4>Дефиниција.</h4>
-      Обим троугла је збир свих страница троугла.
-    </div>
-    <br />
-    Обим троугла можемо одредити графичким надовезивањем дужи које чине странице
-    тог троугла. У наставку је приказана визуализација отварања троугла и његово
-    исправљање у једну дужину. Дуж која се тада добије представља обим троугла.
-    На праву одређену тачкама A и B нанели смо дужи FA и BE, такве да је FA=AC=b
-    и BE=BC=a , чиме је дуж FE=FA+AB+BE=b+c+a одређена страницама \( \triangle
-    ABC \) и чини обим датог троугла.
+<p>
+  У следећем делу лекције сазнаћеш које тачно правило важи за странице троугла.
+</p>
 
-    <h3 class="display-5">Интерактивни аплет</h3>
-    <p>
-      На следећем аплету притиском на дугме ПОКРЕНИ АНИМАЦИЈУ приказаће се обим
-      троугла.
-    </p>
-    <br />
+<br />
 
-    <!-- APLET "Obim trouglova1.ggb" -->
+<div class="deffinition-paragraph">
+  <h4>Тврђење.</h4>
+  Ако су задате неке три дужи \( a, b, c \), онда неједнакости \( a &lt; b + c
+  \), \( b &lt; a + c \) и \( c &lt; a + b \) представљају услове које те дужи
+  морају задовољавати да би биле странице неког троугла.
+</div>
+
+<br />
+
+<h3 class="display-5">Обим троугла</h3>
+
+<div class="deffinition-paragraph">
+  <h4>Дефиниција.</h4>
+  Обим троугла је збир свих страница троугла.
+</div>
+
+<br />
+
+<p>
+  Обим троугла можемо одредити графичким надовезивањем дужи које чине странице
+  тог троугла. У наставку је приказана визуализација отварања троугла и његово
+  исправљање у једну дужину. Дуж која се тада добије представља обим троугла. На
+  праву одређену тачкама A и B нанели смо дужи FA и BE, такве да је \( FA = AC =
+  b \) и \( BE = BC = a \), чиме је дуж \( FE = FA + AB + BE = b + c + a \)
+  одређена страницама \( \triangle ABC \) и чини обим датог троугла.
+</p>
+
+<h3 class="display-5">Интерактивни аплет</h3>
+
+<p>
+  На следећем аплету притиском на дугме ПОКРЕНИ АНИМАЦИЈУ приказаће се обим
+  троугла.
+</p>
+
+<br />
+
 <div style="display: flex; justify-content: center; align-items: center">
-<iframe scrolling="no" title="02_ аплет 2 Обим троугла - графичко надовезивање дужи" src="https://www.geogebra.org/material/iframe/id/hg2e9cbj/width/1336/height/556/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1336px" height="556px" style="border:0px;"> </iframe>
-  </div>
-    <div class="light-paragraph">
-      <p>
-        <b>Пример.</b> Израчунај обим троугла чије су странице 4cm, 5cm, 10cm.
-        <br />
-        <b>Решење.</b> \[\begin{aligned} O=a+b+c \\ O=4cm+5cm+10cm \\
-        O=19cm\end{aligned}. \] 
-        <i>Напомена:</i> Обим се мери у центиметрима (cm), јер
-        су све странице троугла изражене у центиметрима.
-      </p>
-    </div>
+  <iframe
+    scrolling="no"
+    title="02_ аплет 2 Обим троугла - графичко надовезивање дужи"
+    src="https://www.geogebra.org/material/iframe/id/hg2e9cbj/width/1336/height/556/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false"
+    width="1336px"
+    height="556px"
+    style="border: 0px"
+  ></iframe>
+</div>
 
-    <div class="success-paragraph">
-      <h4>Задаци за вежбу</h4>
-      <p>
-        1. Дужине две странице троугла су 10cm и 16cm. Да ли дужина треће
-        странице може бити 26cm?
-      </p>
-      <p>
-        2. Израчунај непознату страницу троугла ако је обим 50cm, а две познате
-        странице 26cm и 13cm.
-      </p>
-      <p>
-        3.Троугао има странице АB=2x cm, BC= x+3 cm, AC= 3x-3 cm. Aко је обим
-        троугла 24cm, пронађи вредност x и странице троугла.
-      </p>
-      <b>Решења.</b>
-      <br />
-      1. Не, јер је једна дуж једнака збиру друге две, па у овом случају не
-      добијамо троугао. <br />
-      2. 11cm <br />
-      3. x=4cm, AB=8cm, BC=7cm, AC=9cm.
-    </div>
+<div class="light-paragraph">
+  <p>
+    <b>Пример.</b> Израчунај обим троугла чије су странице 4cm, 5cm и 10cm.
+    <br />
+    <b>Решење.</b>
+    \[ \begin{aligned} O &= a + b + c \\ O &= 4\text{cm} + 5\text{cm} +
+    10\text{cm} \\ O &= 19\text{cm} \end{aligned} \]
+    <i>Напомена:</i> Обим се мери у центиметрима (cm), јер су све странице
+    троугла изражене у центиметрима.
+  </p>
+</div>
 
-    <div style="display: flex; justify-content: space-between">
-    <button
-      class="btn btn-link"
-      onclick="onLessonClick(this)"
-      data-course-id="trouglovi_os"
-      data-lesson-id="uvod_i_motivacija"
-    >
-      Претходна лекција
-    </button>
-    <button
-      class="btn btn-link"
-      onclick="onLessonClick(this)"
-      data-course-id="trouglovi_os"
-      data-lesson-id="uglovi"
-    >
-    Следећа лекција    </button>
-    </div>
-  </body>
+<div class="success-paragraph">
+  <h4>Задаци за вежбу</h4>
+  <p>
+    1. Дужине две странице троугла су 10cm и 16cm. Да ли дужина треће странице
+    може бити 26cm?
+  </p>
+  <p>
+    2. Израчунај непознату страницу троугла ако је обим 50cm, а две познате
+    странице 26cm и 13cm.
+  </p>
+  <p>
+    3. Троугао има странице \( AB = 2x \text{ cm} \), \( BC = x + 3 \text{ cm}
+    \), \( AC = 3x - 3 \text{ cm} \). Ако је обим троугла 24cm, пронађи вредност
+    \( x \) и странице троугла.
+  </p>
+  <b>Решења.</b>
+  <br />
+  1. Не, јер је једна дуж једнака збиру друге две, па у овом случају не добијамо
+  троугао. <br />
+  2. 11cm <br />
+  3. \( x = 4\text{cm} \), \( AB = 8\text{cm} \), \( BC = 7\text{cm} \), \( AC =
+  9\text{cm} \)
+</div>
+
+<div style="display: flex; justify-content: space-between">
+  <button
+    class="btn btn-link"
+    onclick="onLessonClick(this)"
+    data-course-id="trouglovi_os"
+    data-lesson-id="uvod_i_motivacija"
+  >
+    Претходна лекција
+  </button>
+  <button
+    class="btn btn-link"
+    onclick="onLessonClick(this)"
+    data-course-id="trouglovi_os"
+    data-lesson-id="uglovi"
+  >
+    Следећа лекција
+  </button>
+</div>
